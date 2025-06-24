@@ -17,7 +17,7 @@ export class ReviewComponent implements OnInit {
   review: Review = { name: '', message: '' }; // ✅ это добавляем
   reviews: Review[] = [];
   userName: string = ''; // будет заполнено при отправке
-  apiUrl = 'https://localhost:7174/api/reviews';
+  apiUrl = 'https://aleksgeotoursreviewsapi.onrender.com/api/reviews';
 
   constructor(private http: HttpClient) {}
 
