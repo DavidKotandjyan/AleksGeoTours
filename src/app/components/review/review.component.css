@@ -1,0 +1,178 @@
+body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #f4f4f4;
+      margin: 0;
+      padding: 20px;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 30px;
+      color: #333;
+    }
+.name {
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.2));
+  padding: 20px 40px;
+  border-radius: 12px;
+  text-align: center;
+  max-width: 600px;
+  margin: 40px auto;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(6px);
+}
+
+.name h1 {
+  font-size: 3rem;
+  color: #fff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  font-family: 'Georgia', serif;
+  margin: 0;
+  letter-spacing: 2px;
+}
+.review-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  max-width: 400px;
+  margin: 40px auto;
+  padding: 20px;
+  border-radius: 12px;
+  background-color: #f9f9f9;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+.reviews-container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.review-card {
+  background-color: #f2f2f2;
+  border-radius: 8px;
+  padding: 15px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.review-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.reviewer-name {
+  font-size: 16px;
+}
+
+.review-text {
+  font-size: 15px;
+  color: #333;
+}
+
+.review-form input,
+.review-form textarea {
+  padding: 10px 12px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  resize: vertical;
+  outline: none;
+  transition: border 0.3s;
+}
+
+.review-form input:focus,
+.review-form textarea:focus {
+  border-color: #0077cc;
+}
+
+.review-form button {
+  padding: 10px;
+  font-size: 16px;
+  background-color: #0077cc;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.review-form button:hover {
+  background-color: #005fa3;
+}
+
+/* Отзывы */
+.reviews-list {
+  max-width: 600px;
+  margin: 30px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.review-item {
+  padding: 15px 20px;
+  border-radius: 10px;
+  background-color: #ffffff;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+}
+
+.review-item strong {
+  color: #0077cc;
+  font-size: 17px;
+}
+
+.review-item p {
+  margin: 8px 0 4px;
+  font-size: 15px;
+}
+
+.review-item small {
+  color: #888;
+  font-size: 13px;
+}
+    .reviews-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 20px;
+    }
+
+    .review-card {
+      background: white;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .review-card:hover {
+      transform: scale(1.02);
+    }
+
+    .review-header {
+      display: flex;
+      align-items: center;
+      margin-bottom: 10px;
+      gap: 10px;
+    }
+    
+    .reviewer-name {
+      font-weight: bold;
+      color: #444;
+    }
+
+    .review-text {
+      color: #555;
+      font-size: 15px;
+      margin-top: 8px;
+    }
+    @media (max-width: 600px) {
+  .name h1 {
+    font-size: 2rem;
+  }
+
+  .name {
+    padding: 15px 20px;
+  }
+}

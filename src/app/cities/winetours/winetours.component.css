@@ -1,0 +1,224 @@
+.name {
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.2));
+  padding: 20px 40px;
+  border-radius: 12px;
+  text-align: center;
+  max-width: 600px;
+  margin: 40px auto;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(6px);
+}
+
+.name h1 {
+  font-size: 3rem;
+  color: #fff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  font-family: 'Georgia', serif;
+  margin: 0;
+  letter-spacing: 2px;
+}
+.announcement {
+    background-color: #ffe4b5;
+    border-left: 6px solid #ff4500;
+    padding: 16px;
+    margin: 20px 0;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    border-radius: 8px;
+    color: #333;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  }
+
+  .announcement strong {
+    color: #c0392b;
+  }
+.slider-container {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 20px;
+  background: #fff5e6;
+  border-radius: 16px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+  transition: all 0.4s ease;
+}
+
+.slide {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.slide-img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  object-fit: cover;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+.slide-text {
+  margin-top: 20px;
+  font-size: 1rem;
+  color: #333;
+  line-height: 1.6;
+  text-align: justify;
+  padding: 0 10px;
+}
+
+.controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 25px;
+  gap: 20px;
+}
+
+.nav-btn {
+  background-color: #8b0000;
+  color: #fff;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 50%;
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.nav-btn:hover {
+  background-color: #a30000;
+}
+
+.index-indicator {
+  font-size: 1.1rem;
+  color: #444;
+}
+.wine-tour-card {
+  background-color: #fffaf3;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  padding: 25px;
+  margin: 30px auto;
+  max-width: 900px;
+  transition: transform 0.3s ease;
+}
+
+.wine-tour-card:hover {
+  transform: scale(1.01);
+}
+
+.card-title {
+  font-size: 1.6rem;
+  color: #7b2c2c;
+  margin-bottom: 20px;
+}
+
+
+.card-text {
+  color: #444;
+  font-size: 1.05rem;
+  line-height: 1.6;
+}
+
+.tour-list {
+  padding-left: 20px;
+  margin: 20px 0;
+  list-style-type: square;
+}
+
+.tour-list li {
+  margin-bottom: 15px;
+}
+.tour-info {
+    background: linear-gradient(135deg, #fff8f0, #ffe9dc);
+    border-left: 5px solid #f47c3c;
+    padding: 20px;
+    margin: 30px auto;
+    max-width: 600px;
+    font-family: 'Segoe UI', sans-serif;
+    color: #333;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+  }
+
+  .tour-info h2 {
+    color: #d35400;
+    margin-bottom: 10px;
+  }
+
+  .tour-info p {
+    font-size: 17px;
+    line-height: 1.6;
+  }
+
+  .tour-info strong {
+    color: #c0392b;
+  }
+
+  .tour-info em {
+    color: #7f8c8d;
+  }
+.tour-announcement {
+    background: linear-gradient(to right, #fceabb, #f8b500);
+    padding: 20px;
+    border-radius: 12px;
+    color: #4b2c20;
+    font-family: 'Segoe UI', sans-serif;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+    max-width: 600px;
+    margin: 20px auto;
+    border: 2px solid #e6a100;
+  }
+
+  .tour-announcement h2 {
+    margin-top: 0;
+    color: #8b0000;
+    font-size: 24px;
+  }
+
+  .tour-announcement p {
+    font-size: 18px;
+    line-height: 1.6;
+  }
+
+  .tour-announcement strong {
+    color: #a0522d;
+  }
+.btn-primary {
+  background-color: #8b0000;
+  border: none;
+  padding: 12px 28px;
+  font-size: 1.1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #a30000;
+}
+.contacts{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 5px;
+}
+@media screen and (max-width:1200px){
+    .container{
+        flex-direction: column;
+    }
+    .name{
+        width: 60%;
+    }
+}
+@media (max-width: 600px) {
+  .name h1 {
+    font-size: 2rem;
+  }
+
+  .name {
+    padding: 15px 20px;
+  }
+}

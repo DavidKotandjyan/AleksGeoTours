@@ -1,0 +1,245 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f4f6f8;
+  margin: 0;
+  padding: 0;
+}
+.name {
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.2));
+  padding: 20px 40px;
+  border-radius: 12px;
+  text-align: center;
+  max-width: 600px;
+  margin: 40px auto;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(6px);
+}
+.contact-column {
+  flex: 1 1 500px;
+  background: #fff;
+  border-radius: 15px;
+  padding: 30px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.contact-column {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.about-card {
+  background: #fffaf3;
+  border-radius: 16px;
+  padding: 30px;
+  max-width: 100%;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  font-family: 'Segoe UI', sans-serif;
+  color: #3a2f25;
+  border-left: 8px solid #f4a261;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.about-card h3 {
+  font-size: 28px;
+  color: #8b0000;
+  margin-bottom: 20px;
+}
+
+.about-card p {
+  font-size: 18px;
+  line-height: 1.7;
+  margin-bottom: 16px;
+}
+
+.about-card strong {
+  color: #b44c00;
+}
+
+.about-card em {
+  font-style: italic;
+  color: #5a4635;
+}
+
+.back-button {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 24px;
+  background-color: #f4a261;
+  color: white;
+  text-decoration: none;
+  border-radius: 10px;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.back-button:hover {
+  background-color: #e76f51;
+}
+
+/* Анимация */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.name h1 {
+  font-size: 3rem;
+  color: #fff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  font-family: 'Georgia', serif;
+  margin: 0;
+  letter-spacing: 2px;
+}
+
+
+/* Общий layout */
+.bigdiv {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  padding: 20px;
+}
+
+/* Левая и правая части */
+.leftdiv,
+.rightdiv {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  flex: 1 1 500px;
+}
+
+/* Внутренние блоки */
+.box2, .box6 {
+  display: flex;
+  gap: 30px;
+}
+
+.box-l, .box-r, .box-l2, .box-r2 {
+  flex: 1;
+}
+
+/* Стиль для карточек */
+.card {
+  position: relative;
+  border-radius: 15px;
+  overflow: hidden;
+  height: 230px;
+  color: #fff;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: flex-end;
+  transition: transform 0.3s ease;
+}
+.card:hover {
+  transform: scale(1.02);
+}
+
+/* Полупрозрачный фон под текст */
+.card-body {
+  background: rgba(0, 0, 0, 0.55);
+  padding: 20px;
+  width: 100%;
+}
+
+/* Размеры карточек */
+.card-large1, .card-large2, .card-large3, .card-large4 {
+  height: 260px;
+}
+.card-small1, .card-small2, .card-small3, .card-small4 {
+  height: 215px;
+}
+
+/* Заголовки и подзаголовки */
+.card-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+.card-subtitle {
+  font-size: 1rem;
+  margin: 8px 0 12px;
+}
+
+/* Кнопка */
+.btn {
+  background: #3498db;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 8px;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background 0.3s ease;
+}
+.btn:hover {
+  background: #2c80b4;
+}
+
+/* 📸 Фоновые картинки (замени на свои пути или ссылки) */
+.card-large1 {
+  background-image: url('https://pohcdn.com/sites/default/files/styles/node__blog_post__bp_banner/public/hero_banner/Tbilisi-old-town-2.jpg');
+}
+.card-small1 {
+  background-image: url('https://7d9e88a8-f178-4098-bea5-48d960920605.selcdn.net/45c99a93-2ee0-40a8-83ac-b709c5a1a03b/');
+}
+.card-small2 {
+  background-image: url('https://gotrip.ge/blog/wp-content/uploads/2022/11/shutterstock_signagi_2.jpg');
+}
+.card-large2 {
+  background-image: url('https://gotrip.ge/blog/wp-content/uploads/2022/12/shutterstock_541043005.jpeg');
+}
+.card-large3 {
+  background-image: url('https://dynamic-media-cdn.tripadvisor.com/media/photo-o/16/13/d9/c9/javri.jpg?w=900&h=500&s=1');
+}
+.card-large4 {
+  background-image: url('https://rus-wind.ru/wp-content/uploads/2022/04/%D0%92%D0%B8%D0%BD%D0%BD%D1%8B%D0%B9-%D1%82%D1%83%D1%80%D0%B8%D0%B7%D0%BC-RUSSIAN-WIND-9-1536x959-optimized.webp');
+}
+.card-small3 {
+  background-image: url('https://gotrip.ge/blog/wp-content/uploads/2023/01/shutterstock_689517016.jpeg');
+}
+.card-small4 {
+  background-image: url('https://poisk-tour.com/imagecache/orig/65/006536.jpg');
+}
+
+/* 📱 Мобильная адаптация */
+@media (max-width: 992px) {
+  .bigdiv {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .leftdiv,
+  .rightdiv {
+    width: 100%;
+  }
+
+  .box2,
+  .box6 {
+    flex-direction: column;
+  }
+
+  .card {
+    height: auto;
+    min-height: 220px;
+  }
+}
+
+@media (max-width: 600px) {
+  .name {
+    padding: 15px 20px;
+  }
+
+  .name h1 {
+    font-size: 2rem;
+  }
+
+  .btn {
+    width: 100%;
+    text-align: center;
+  }
+}
