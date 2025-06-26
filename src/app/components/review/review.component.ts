@@ -31,13 +31,22 @@ export class ReviewComponent implements OnInit {
     });
   }
 
-  sendReview() {
-    if (this.review.name.trim() && this.review.message.trim()) {
-      this.http.post<Review>(this.apiUrl, this.review).subscribe(() => {
-        this.userName = this.review.name; // запоминаем, кто отправил
-        this.review = { name: '', message: '' }; // очищаем форму
+sendReview() {
+  if (this.review.name.trim() && this.review.message.trim()) {
+    this.http.post<Review>(this.apiUrl, this.review).subscribe({
+      next: () => {
+        this.userName = this.review.name;
+        this.review = { name: '', message: '' };
         this.loadReviews();
-      });
-    }
+      },
+      error: err => {
+        console.error('Ошибка при отправке отзыва:', err);
+        alert('Произошла ошибка при отправке отзыва. Попробуйте позже.');
+      }
+    });
+  } else {
+    alert('Пожалуйста, заполните все поля.');
   }
+}
+
 }
